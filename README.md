@@ -11,3 +11,9 @@ ls -lhSr
 # Find out which processes spend more time on boot
 systemd-analyze plot > output.svg
 ```
+
+## PDF
+```bash
+# Keep page range 5-8 from a PDF
+pdftk original.pdf cat 5-8 output range.pdf
+```
