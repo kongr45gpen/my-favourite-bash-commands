@@ -4,6 +4,9 @@
 ```bash
 # Find the largest files in a directory
 ls -lhSr
+
+# List all installed fonts
+fc-list
 ```
 
 ## Intermediate
