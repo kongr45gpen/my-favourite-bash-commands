@@ -7,6 +7,9 @@ ls -lhSr
 
 # List all installed fonts
 fc-list
+
+# Convert Windows (DOS) newlines to Unix
+perl -pi -e 's/\r\n/\n/g' file.txt
 ```
 
 ## Intermediate
