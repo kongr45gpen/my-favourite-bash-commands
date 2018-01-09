@@ -23,3 +23,8 @@ systemd-analyze plot > output.svg
 # Keep page range 5-8 from a PDF
 pdftk original.pdf cat 5-8 output range.pdf
 ```
+
+## Archives
+```bash
+# Mount a ZIP file as a directory
+fuse-zip -r file.zip /tmp
