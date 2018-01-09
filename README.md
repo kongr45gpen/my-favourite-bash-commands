@@ -28,3 +28,4 @@ pdftk original.pdf cat 5-8 output range.pdf
 ```bash
 # Mount a ZIP file as a directory
 fuse-zip -r file.zip /tmp
+```
