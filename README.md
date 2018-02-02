@@ -33,5 +33,5 @@ fuse-zip -r file.zip /tmp
 ## dpkg/apt packages
 ```bash
 # List installed packages by size
-dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
+dpkg-query -Wf '${db:Status-Status} ${Installed-Size}\t${Package}\n' | sed -ne 's/^installed //p'|sort -n
 ```
