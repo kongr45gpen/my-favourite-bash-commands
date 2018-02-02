@@ -29,3 +29,9 @@ pdftk original.pdf cat 5-8 output range.pdf
 # Mount a ZIP file as a directory
 fuse-zip -r file.zip /tmp
 ```
+
+## dpkg/apt packages
+```bash
+# List installed packages by size
+dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
+```
