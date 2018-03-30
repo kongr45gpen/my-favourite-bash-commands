@@ -16,6 +16,9 @@ perl -pi -e 's/\r\n/\n/g' file.txt
 ```bash
 # Find out which processes spend more time on boot
 systemd-analyze plot > output.svg
+
+# Screen cloning for screens with different aspect ratios
+xrandr --output LVDS1 --auto --output VGA1 --auto --same-as LVDS1 --scale 1.33x1
 ```
 
 ## PDF
