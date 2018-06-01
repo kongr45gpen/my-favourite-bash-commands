@@ -10,6 +10,9 @@ fc-list
 
 # Convert Windows (DOS) newlines to Unix
 perl -pi -e 's/\r\n/\n/g' file.txt
+
+# Get information about a UTF-8 character
+echo ϛ | uniname
 ```
 
 ## Intermediate
