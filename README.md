@@ -26,6 +26,9 @@ xrandr --output LVDS1 --auto --output VGA1 --auto --same-as LVDS1 --scale 1.33x1
 
 ## PDF
 ```bash
+# Combine PDFs into a single file
+pdftk i1.pdf i2.pdf output combined.pdf
+
 # Keep page range 5-8 from a PDF
 pdftk original.pdf cat 5-8 output range.pdf
 ```
