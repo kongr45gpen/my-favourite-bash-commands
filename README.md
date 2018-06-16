@@ -5,6 +5,9 @@
 # Find the largest files in a directory
 ls -lhSr
 
+# Find the largest files+folders in a directory
+du -hs | sort -hu
+
 # List all installed fonts
 fc-list
 
