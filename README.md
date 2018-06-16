@@ -12,6 +12,8 @@ du -hs | sort -hu
 fc-list
 
 # Convert Windows (DOS) newlines to Unix
+dos2unix file.txt
+# Alternatively, with built-in tools
 perl -pi -e 's/\r\n/\n/g' file.txt
 
 # Get information about a UTF-8 character
