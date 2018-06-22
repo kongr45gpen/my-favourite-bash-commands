@@ -49,3 +49,9 @@ fuse-zip -r file.zip /tmp
 # List installed packages by size
 dpkg-query -Wf '${db:Status-Status} ${Installed-Size}\t${Package}\n' | sed -ne 's/^installed //p'|sort -n
 ```
+
+## Media
+```bash
+# Show total duration of MP3 files in a directory
+total_seconds=$(( $(mp3info -p '%S + ' *.mp3) 0 )) printf "%02d:%02d:%02d\n" $((total_seconds / 3600)) $(((total_seconds % 3600) / 60)) $((total_seconds % 60))
+```
