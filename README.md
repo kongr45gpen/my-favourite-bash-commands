@@ -27,6 +27,10 @@ systemd-analyze plot > output.svg
 
 # Screen cloning for screens with different aspect ratios
 xrandr --output LVDS1 --auto --output VGA1 --auto --same-as LVDS1 --scale 1.33x1
+
+# Commands to generate random passwords
+head /dev/urandom | tr -dc A-Za-z0-9 | head -c 15 ; echo ''
+pwgen -s 15 7
 ```
 
 ## PDF
