@@ -29,8 +29,10 @@ systemd-analyze plot > output.svg
 xrandr --output LVDS1 --auto --output VGA1 --auto --same-as LVDS1 --scale 1.33x1
 
 # Commands to generate random passwords
-head /dev/urandom | tr -dc A-Za-z0-9 | head -c 15 ; echo ''
+head /dev/urandom | tr -dc A-Za-z0-9 | head -c 15 ; echo
+head /dev/urandom | tr -dc A-Za-z0-9 | head -c `shuf -i 15-20 -n 1` ; echo
 pwgen -s 15 7
+shuf /usr/share/dict/words -n 4 | paste -sd " "
 ```
 
 ## PDF
