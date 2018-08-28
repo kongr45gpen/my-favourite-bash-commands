@@ -33,6 +33,9 @@ head /dev/urandom | tr -dc A-Za-z0-9 | head -c 15 ; echo
 head /dev/urandom | tr -dc A-Za-z0-9 | head -c `shuf -i 15-20 -n 1` ; echo
 pwgen -s 15 7
 shuf /usr/share/dict/words -n 4 | paste -sd " "
+
+# Mount a drive as a regular user
+udisksctl mount -b /dev/sda1
 ```
 
 ## PDF
