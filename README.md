@@ -36,6 +36,10 @@ shuf /usr/share/dict/words -n 4 | paste -sd " "
 
 # Mount a drive as a regular user
 udisksctl mount -b /dev/sda1
+
+# Get information about what your mouse & keyboard are doing
+xev
+evtest
 ```
 
 ## PDF
