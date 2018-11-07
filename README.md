@@ -40,6 +40,9 @@ udisksctl mount -b /dev/sda1
 # Get information about what your mouse & keyboard are doing
 xev
 evtest
+
+# Recursively replace a string on all files in a directory
+sed -i 's/old/new/g' `find -type f`
 ```
 
 ## PDF
