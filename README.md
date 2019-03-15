@@ -20,13 +20,10 @@ perl -pi -e 's/\r\n/\n/g' file.txt
 echo ϛ | uniname
 ```
 
-## Intermediate
+## Advanced
 ```bash
 # Find out which processes spend more time on boot
 systemd-analyze plot > output.svg
-
-# Screen cloning for screens with different aspect ratios
-xrandr --output LVDS1 --auto --output VGA1 --auto --same-as LVDS1 --scale 1.33x1
 
 # Commands to generate random passwords
 head /dev/urandom | tr -dc A-Za-z0-9 | head -c 15 ; echo
@@ -52,6 +49,24 @@ pdftk i1.pdf i2.pdf output combined.pdf
 
 # Keep page range 5-8 from a PDF
 pdftk original.pdf cat 5-8 output range.pdf
+```
+
+## Second screen
+```bash
+# We assume that "LVDS1" is the original screen, and "VGA1" is an external screen.
+# Execute `xrandr` to see the screens connected to your computer and their resolutions.
+
+# Extend screen to the right
+xrandr --output LVDS1 --auto --output VGA1 --right-of LVDS1 --auto
+
+# Screen cloning for screens with different aspect ratios
+xrandr --output LVDS1 --auto --output VGA1 --auto --same-as LVDS1 --scale 1.33x1
+
+# Scale the screen to a larger resolution
+xrandr --output LVDS1 --scale 1.17x1.17 --panning 1600x900
+
+# VNC server the on current desktop
+x11vnc -forever -loop -noxdamage -repeat -rfbport 5900 -shared --noxrecord
 ```
 
 ## Archives
