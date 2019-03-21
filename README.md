@@ -40,6 +40,11 @@ evtest
 
 # Recursively replace a string on all files in a directory
 sed -i 's/old/new/g' `find -type f`
+
+# Find which process is using a network port
+sudo netstat -nlp | grep :80
+sudo lsof -n -i :80
+sudo ss -lptn 'sport = :8080'
 ```
 
 ## PDF
