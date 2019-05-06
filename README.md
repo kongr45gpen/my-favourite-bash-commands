@@ -45,6 +45,9 @@ sed -i 's/old/new/g' `find -type f`
 sudo netstat -nlp | grep :80
 sudo lsof -n -i :80
 sudo ss -lptn 'sport = :8080'
+
+# Paste image from the clipboard into a file
+xclip -selection clipboard -t image/png -o > file.png
 ```
 
 ## PDF
