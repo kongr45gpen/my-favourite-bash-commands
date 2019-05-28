@@ -48,6 +48,9 @@ sudo ss -lptn 'sport = :8080'
 
 # Paste image from the clipboard into a file
 xclip -selection clipboard -t image/png -o > file.png
+
+# Clear >1 week old entries from the journal
+journalctl --vacuum-time=7d
 ```
 
 ## PDF
