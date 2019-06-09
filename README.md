@@ -106,3 +106,9 @@ total_seconds=$(( $(mp3info -p '%S + ' *.mp3) 0 )) bash -c 'printf "%02d:%02d:%0
 
 ### More commands
 - [Remove everything from Docker](https://gist.github.com/beeman/aca41f3ebd2bf5efbd9d7fef09eac54d)
+
+### Alias packs & utilities
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [SCM Breeze](https://github.com/scmbreeze/scm_breeze)
+- [Git Extras](https://github.com/tj/git-extras)
+- [PyGitUp](https://github.com/msiemens/PyGitUp)
