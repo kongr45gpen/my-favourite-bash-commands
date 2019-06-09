@@ -18,6 +18,9 @@ perl -pi -e 's/\r\n/\n/g' file.txt
 
 # Get information about a UTF-8 character
 echo ϛ | uniname
+
+# Create a backup version of a file/directory
+cp -R file{,.bak}
 ```
 
 ## Advanced
