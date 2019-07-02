@@ -22,6 +22,9 @@ echo ϛ | uniname
 
 # Create a backup version of a file/directory
 cp -R file{,.bak}
+
+# Get the full path to a file
+readlink -f file.txt
 ```
 
 ## Advanced
