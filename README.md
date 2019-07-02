@@ -15,6 +15,7 @@ fc-list
 dos2unix file.txt
 # Alternatively, with built-in tools
 perl -pi -e 's/\r\n/\n/g' file.txt
+vim file.txt -c "set ff=unix" -c ":wq"
 
 # Get information about a UTF-8 character
 echo ϛ | uniname
