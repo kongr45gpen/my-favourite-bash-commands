@@ -60,7 +60,7 @@ xclip -selection clipboard -t image/png -o > file.png
 journalctl --vacuum-time=7d
 
 # Copy many small files over SSH
-rsync -avz -e ssh /local/path remoteuser@example.com:/remote/path
+rsync -avzh --progress -e ssh /local/path remoteuser@example.com:/remote/path
 ```
 
 ## PDF
