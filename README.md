@@ -111,6 +111,15 @@ apt-find file
 total_seconds=$(( $(mp3info -p '%S + ' *.mp3) 0 )) bash -c 'printf "%02d:%02d:%02d\n" $((total_seconds / 3600)) $(((total_seconds % 3600) / 60)) $((total_seconds % 60))'
 ```
 
+## git
+```bash
+# Single-line log
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+# Remove everything that is untracked by git
+git clean -f -d
+```
+
 ### More commands
 - [Remove everything from Docker](https://gist.github.com/beeman/aca41f3ebd2bf5efbd9d7fef09eac54d)
 
