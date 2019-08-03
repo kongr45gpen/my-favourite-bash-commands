@@ -128,3 +128,4 @@ git clean -f -d
 - [SCM Breeze](https://github.com/scmbreeze/scm_breeze)
 - [Git Extras](https://github.com/tj/git-extras)
 - [PyGitUp](https://github.com/msiemens/PyGitUp)
+- [.tmux](https://github.com/gpakosz/.tmux)
