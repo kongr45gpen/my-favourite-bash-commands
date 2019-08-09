@@ -61,6 +61,9 @@ journalctl --vacuum-time=7d
 
 # Copy many small files over SSH
 rsync -avzh --progress -e ssh /local/path remoteuser@example.com:/remote/path
+
+# Select a window and see which process it's from
+ps -o pid,user,ni,comm,pcpu,pmem,start,args $(xprop -id $(xwininfo | grep "Window id" | awk '{print $4}') | grep _NET_WM_PID | awk '{print $3}')
 ```
 
 ## PDF
