@@ -25,6 +25,9 @@ cp -R file{,.bak}
 
 # Get the full path to a file
 readlink -f file.txt
+
+# Test your speakers
+speaker-test -t wav -c 6
 ```
 
 ## Advanced
