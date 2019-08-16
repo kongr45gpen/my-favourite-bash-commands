@@ -67,6 +67,9 @@ rsync -avzh --progress -e ssh /local/path remoteuser@example.com:/remote/path
 
 # Select a window and see which process it's from
 ps -o pid,user,ni,comm,pcpu,pmem,start,args $(xprop -id $(xwininfo | grep "Window id" | awk '{print $4}') | grep _NET_WM_PID | awk '{print $3}')
+
+# Quickly create an HTTP file server on the current directory
+python -m SimpleHTTPServer 8000
 ```
 
 ## PDF
