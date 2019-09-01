@@ -70,6 +70,10 @@ ps -o pid,user,ni,comm,pcpu,pmem,start,args $(xprop -id $(xwininfo | grep "Windo
 
 # Quickly create an HTTP file server on the current directory
 python -m SimpleHTTPServer 8000
+
+# Calculate how much time a 3-second task done 2 times a day for 5 years spends in hours
+# See https://www.xkcd.com/1205/
+units "5 years * 2 / days * 3 seconds" hours
 ```
 
 ## PDF
