@@ -62,6 +62,9 @@ xclip -selection clipboard -t image/png -o > file.png
 # Clear >1 week old entries from the journal
 journalctl --vacuum-time=7d
 
+# Create a new user
+useradd -m username
+
 # Copy many small files over SSH
 rsync -avzh --progress -e ssh /local/path remoteuser@example.com:/remote/path
 
