@@ -151,3 +151,4 @@ git clean -f -d
 
 ### Friends
 - [Stavrosfil/useful_commands](https://github.com/Stavrosfil/useful_commands)
+- [Cool, but obscure unix tools](https://kkovacs.eu/cool-but-obscure-unix-tools)
