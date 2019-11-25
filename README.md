@@ -139,6 +139,18 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 git clean -f -d
 ```
 
+## Serial ports
+```bash
+# Start minicom on a 115000 baud/s line with some sane defaults
+minicom -s -c on -b 3000000 -D /dev/ttyUSB0
+
+# Set serial port baud rate with immediate flushing
+stty -F /dev/ttyUSB0 2000000 -icanon
+
+# Dump the serial data in a hexadecimal format
+hexdump -ve '1/1 "(0x%01X "' -e '1/1 "%c) "" "' -e '1/0 "\n"' /dev/ttyUSB0
+```
+
 ### More commands
 - [Remove everything from Docker](https://gist.github.com/beeman/aca41f3ebd2bf5efbd9d7fef09eac54d)
 
