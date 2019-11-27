@@ -28,6 +28,9 @@ readlink -f file.txt
 
 # Test your speakers
 speaker-test -t wav -c 6
+
+# Get information about a storage drive
+sudo smartctl -A /dev/nvme0
 ```
 
 ## Advanced
