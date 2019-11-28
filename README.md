@@ -31,6 +31,7 @@ speaker-test -t wav -c 6
 
 # Get information about a storage drive
 sudo smartctl -A /dev/nvme0
+sudo hdparm -I /dev/sda
 ```
 
 ## Advanced
@@ -80,6 +81,9 @@ python -m SimpleHTTPServer 8000
 # Calculate how much time a 3-second task done 2 times a day for 5 years spends in hours
 # See https://www.xkcd.com/1205/
 units "5 years * 2 / days * 3 seconds" hours
+
+# Test the read speed of a drive
+sudo hdparm -Tt /dev/sda
 ```
 
 ## PDF
