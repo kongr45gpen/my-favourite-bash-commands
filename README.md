@@ -69,6 +69,9 @@ journalctl --vacuum-time=7d
 # Create a new user
 useradd -m username
 
+# Copy with a progress bar
+gcp -R /directory/1 /directory/2
+
 # Copy many small files over SSH
 rsync -Pavzh -e ssh /local/path remoteuser@example.com:/remote/path
 
