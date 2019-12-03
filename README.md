@@ -28,10 +28,6 @@ readlink -f file.txt
 
 # Test your speakers
 speaker-test -t wav -c 6
-
-# Get information about a storage drive
-sudo smartctl -A /dev/nvme0
-sudo hdparm -I /dev/sda
 ```
 
 ## Advanced
@@ -116,10 +112,20 @@ xrandr --output LVDS1 --scale 1.17x1.17 --panning 1600x900
 x11vnc -forever -loop -noxdamage -repeat -rfbport 5900 -shared --noxrecord
 ```
 
-## Archives
+## Storage
 ```bash
 # Mount a ZIP file as a directory
 fuse-zip -r file.zip /tmp
+
+# List all connected storage devices
+lsblk
+
+# List available space in connected partitions
+df -h
+
+# Get information about a storage drive
+sudo smartctl -A /dev/nvme0
+sudo hdparm -I /dev/sda
 ```
 
 ## dpkg/apt packages
