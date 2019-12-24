@@ -123,6 +123,9 @@ lsblk
 # List available space in connected partitions
 df -h
 
+# Record ISO file to flash drive
+sudo dd if=gparted.iso of=/dev/yourdevice bs=1M status=progress iflag=direct oflag=direct
+
 # Get information about a storage drive
 sudo smartctl -A /dev/nvme0
 sudo hdparm -I /dev/sda
