@@ -173,12 +173,15 @@ hexdump -ve '1/1 "(0x%01X "' -e '1/1 "%c) "" "' -e '1/0 "\n"' /dev/ttyUSB0
 ### More commands
 - [Remove everything from Docker](https://gist.github.com/beeman/aca41f3ebd2bf5efbd9d7fef09eac54d)
 
-### Alias packs & utilities
+### Alias packs & shell utilities
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [SCM Breeze](https://github.com/scmbreeze/scm_breeze)
 - [Git Extras](https://github.com/tj/git-extras)
 - [PyGitUp](https://github.com/msiemens/PyGitUp)
 - [.tmux](https://github.com/gpakosz/.tmux)
+
+### Various utilities
+- [crontab.guru](https://crontab.guru/)
 
 ### Friends
 - [Stavrosfil/useful_commands](https://github.com/Stavrosfil/useful_commands)
