@@ -137,7 +137,7 @@ sudo hdparm -I /dev/sda
 dpkg-query -Wf '${db:Status-Status} ${Installed-Size}\t${Package}\n' | sed -ne 's/^installed //p'|sort -n
 
 # Find which package a file belongs to
-apt-find file
+apt-file file
 ```
 
 ## Directory and file information
