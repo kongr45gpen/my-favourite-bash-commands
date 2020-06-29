@@ -92,6 +92,10 @@ pdftk i1.pdf i2.pdf output combined.pdf
 
 # Keep page range 5-8 from a PDF
 pdftk original.pdf cat 5-8 output range.pdf
+
+# Convert SVG to PDF
+rsvg-convert -f pdf -o input.pdf output.svg
+inkscape input.svg --export-pdf=output.pdf
 ```
 
 ## Second screen
