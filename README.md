@@ -94,7 +94,7 @@ pdftk i1.pdf i2.pdf output combined.pdf
 pdftk original.pdf cat 5-8 output range.pdf
 
 # Convert SVG to PDF
-rsvg-convert -f pdf -o input.pdf output.svg
+rsvg-convert -f pdf -o output.pdf input.svg
 inkscape input.svg --export-pdf=output.pdf
 ```
 
