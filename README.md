@@ -96,6 +96,12 @@ pdftk original.pdf cat 5-8 output range.pdf
 # Convert SVG to PDF
 rsvg-convert -f pdf -o output.pdf input.svg
 inkscape input.svg --export-pdf=output.pdf
+
+# (De)compress PDF file
+qpdf --stream-data=uncompress input.pdf output.pdf
+
+# Get highlighted XMP data
+qpdf --stream-data=uncompress file.pdf - | awk '/<x:xmpmeta xmlns:x="adobe:ns:meta\/">/{flag=1} /<\?xpacket end="w"\?>/{flag=0} flag' | sed '/^[[:space:]]*$/d' | source-highlight -f esc -s xml
 ```
 
 ## Second screen
