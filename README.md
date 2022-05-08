@@ -69,7 +69,7 @@ useradd -m username
 gcp -R /directory/1 /directory/2
 
 # Copy many small files over SSH
-rsync -Pavzh -e ssh /local/path remoteuser@example.com:/remote/path
+rsync -Pavzh --info=progress2 -e ssh /local/path remoteuser@example.com:/remote/path
 
 # Select a window and see which process it's from
 ps -o pid,user,ni,comm,pcpu,pmem,start,args $(xprop -id $(xwininfo | grep "Window id" | awk '{print $4}') | grep _NET_WM_PID | awk '{print $3}')
